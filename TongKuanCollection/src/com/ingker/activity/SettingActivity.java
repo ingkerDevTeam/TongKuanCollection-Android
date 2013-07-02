@@ -5,7 +5,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.TextView;
 
 import com.ingker.model.UserModel;
@@ -101,6 +100,14 @@ public class SettingActivity extends BaseActivity {
 					// TODO Auto-generated method stub
 					UserModel.destoryUserInfo(getApplicationContext());
 					userInfo.setText("未登录");
+				}
+			});
+			alertDialogbBuilder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					// TODO Auto-generated method stub
+					
 				}
 			});
 			alertDialogbBuilder.create().show();

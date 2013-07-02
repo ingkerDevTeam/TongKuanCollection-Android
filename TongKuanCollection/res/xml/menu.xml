@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Preference
+        android:icon="@drawable/menu_index"
+        android:key="timeline"
+        android:title="首页" />
+    <Preference
+        android:icon="@drawable/menu_category"
+        android:key="category"
+        android:title="分类" />
+    <Preference
+        android:icon="@drawable/menu_share"
+        android:key="collect"
+        android:title="收藏" />
+    <Preference
+        android:icon="@drawable/menu_settings"
+        android:key="setting"
+        android:title="设置" />
+
+</PreferenceScreen>

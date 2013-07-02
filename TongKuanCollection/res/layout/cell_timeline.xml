@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageButton
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corners_bg"
+        android:padding="1dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="330dp"
+        android:layout_alignLeft="@+id/backgroundImage"
+        android:layout_alignRight="@+id/backgroundImage"
+        android:layout_alignTop="@+id/backgroundImage"
+        android:layout_margin="10dp"
+        android:background="#000" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:singleLine="true"
+        android:text="Medium Text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/backgroundImage"
+        android:layout_alignLeft="@+id/nameTextView"
+        android:layout_marginBottom="10dp"
+        android:text="￥1000.00"
+        android:textColor="#57960d"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignTop="@+id/priceTextView"
+        android:layout_toRightOf="@+id/priceTextView"
+        android:paddingLeft="100dp"
+        android:src="@drawable/icon_nav_follow" />
+
+    <TextView
+        android:id="@+id/collectCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/priceTextView"
+        android:layout_alignBottom="@+id/priceTextView"
+        android:layout_toRightOf="@+id/icon"
+        android:text="1234"
+        android:textColor="#C2C2C2"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/loveButton"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/button_explore_favorite"
+        android:padding="1dp" />
+
+    <ImageView
+        android:id="@+id/loveImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loveButton"
+        android:layout_alignTop="@+id/loveButton"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/icon_nav_follow" />
+
+</RelativeLayout>

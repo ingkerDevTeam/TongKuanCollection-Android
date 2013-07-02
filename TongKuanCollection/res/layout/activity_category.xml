@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+        <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_nav" >
+
+
+        <TextView
+            android:id="@+id/navigationbarTitle"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="分类"
+            android:textSize="20sp" />
+
+        
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/category_bg"
+        android:divider="#191A1F"
+        android:dividerHeight="1px"
+       	>
+    </ListView>
+    
+
+</LinearLayout>
